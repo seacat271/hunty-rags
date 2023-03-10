@@ -1,3 +1,3 @@
 const Button = () => {
-  return <button></button>;
+  return <button>Rags</button>;
 };
