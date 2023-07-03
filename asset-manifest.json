@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/hunty-rags/static/js/main.300a8b42.js",
+    "index.html": "/hunty-rags/index.html",
+    "main.300a8b42.js.map": "/hunty-rags/static/js/main.300a8b42.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.300a8b42.js"
+  ]
+}
