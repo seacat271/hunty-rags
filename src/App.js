@@ -4,7 +4,7 @@ import Box from "./components/Box/Box";
 
 function App() {
   return (
-    <Box as="main">
+    <Box as="main" width={1280} mx="auto">
       <Header />
       <HomePage />
     </Box>
