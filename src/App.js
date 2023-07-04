@@ -1,6 +1,6 @@
 import { HomePage } from "./pages/HomePage/HomePage";
 import { Header } from "./components/Header/Header";
-import Box from "./components/Box/Box";
+import { Box } from "./components/Box/Box";
 import { Footer } from "./components/Footer/Footer";
 
 function App() {

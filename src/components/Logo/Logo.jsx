@@ -1,4 +1,4 @@
-import Box from "../Box/Box";
+import { Box } from "../Box/Box";
 import LogoImage from "../../utility/Logo.jpeg";
 export const Logo = () => {
   return (

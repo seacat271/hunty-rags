@@ -3,7 +3,7 @@ import {
   FaSquareInstagram,
   FaTelegram,
 } from "react-icons/fa6";
-import Box from "../Box/Box";
+import { Box } from "../Box/Box";
 
 export const SocialIcons = () => {
   return (

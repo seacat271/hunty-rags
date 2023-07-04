@@ -3,3 +3,53 @@ body {
   background-color: beige;
   margin: 0;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+button,
+select {
+  text-transform: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+
+.button {
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
