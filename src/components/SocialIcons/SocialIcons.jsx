@@ -3,13 +3,14 @@ import {
   FaSquareInstagram,
   FaTelegram,
 } from "react-icons/fa6";
+import Box from "../Box/Box";
 
 export const SocialIcons = () => {
   return (
-    <>
-      <FaSquareFacebook />
-      <FaSquareInstagram />
-      <FaTelegram />
-    </>
+    <Box>
+      <FaSquareFacebook size={36} />
+      <FaSquareInstagram size={36} />
+      <FaTelegram size={36} />
+    </Box>
   );
 };
