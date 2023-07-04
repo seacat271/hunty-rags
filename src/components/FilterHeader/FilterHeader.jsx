@@ -1,5 +1,4 @@
 import { FaSistrix } from "react-icons/fa6";
-import { IconContext } from "react-icons";
 
 export const FilterHeader = () => {
   return (
