@@ -1,3 +1,5 @@
+import Box from "../Box/Box";
+
 export const Logo = () => {
-  return <div>Hunty Rags</div>;
+  return <Box>Hunty Rags</Box>;
 };

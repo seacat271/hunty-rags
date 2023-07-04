@@ -2,7 +2,7 @@
   "name": "hunty-rags",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://seacat271.github.io/hunty-rags",
+  "homepage": "https://seacat271.github.io/hunty-rags/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
