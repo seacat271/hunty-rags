@@ -1,10 +1,10 @@
 import { FaLocationDot, FaPhoneVolume, FaEnvelope } from "react-icons/fa6";
-import { Box } from "../Box/Box";
+import { StyledBox } from "../Box/Box.styled";
 import { FooterTitle } from "../FooterTitile/FooterTitle";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
 export const FooterAddress = () => {
   return (
-    <Box as="div">
+    <StyledBox as="div">
       <FooterTitle title={"CONTACTS"} />
       <address>
         <ul>
@@ -29,6 +29,6 @@ export const FooterAddress = () => {
         </ul>
       </address>
       <SocialIcons />
-    </Box>
+    </StyledBox>
   );
 };

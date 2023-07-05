@@ -4,7 +4,7 @@ import {
   FaSquareInstagram,
   FaTelegram,
 } from "react-icons/fa6";
-import { StyledBox } from "./SocialIcons.styled";
+import { StyledBox } from "../Box/Box.styled";
 export const SocialIcons = () => {
   function MakeIconLink(...args) {
     const iconLink = [];
