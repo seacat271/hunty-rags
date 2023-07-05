@@ -8,7 +8,7 @@ import { StyledBox } from "./SocialIcons.styled";
 export const SocialIcons = () => {
   function MakeIconLink(...args) {
     const iconLink = [];
-    [...args].map((item) => {
+    [...args].forEach((item) => {
       item[0].href = item[1];
       iconLink.push(item[0]);
     });
@@ -19,7 +19,6 @@ export const SocialIcons = () => {
     [FaSquareInstagram, "http://www.instagram.com"],
     [FaTelegram, "https://web.telegram.org/"]
   );
-  console.log(icons);
   return (
     <StyledBox as="ul" display="flex">
       {icons.map((Icon) => {
