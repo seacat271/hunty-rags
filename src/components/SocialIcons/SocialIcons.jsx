@@ -1,16 +1,24 @@
+import React from "react";
 import {
   FaSquareFacebook,
   FaSquareInstagram,
   FaTelegram,
 } from "react-icons/fa6";
-import { Box } from "../Box/Box";
-
+import { StyledBox } from "./SocialIcons.styled";
 export const SocialIcons = () => {
+  const icons = [FaSquareFacebook, FaSquareInstagram, FaTelegram];
+
   return (
-    <Box>
-      <FaSquareFacebook size={36} style={{}} />
-      <FaSquareInstagram size={36} />
-      <FaTelegram size={36} />
-    </Box>
+    <StyledBox as="ul" display="flex">
+      {icons.map((Icon) => {
+        return (
+          <li>
+            <a>
+              <Icon size={36} />
+            </a>
+          </li>
+        );
+      })}
+    </StyledBox>
   );
 };
