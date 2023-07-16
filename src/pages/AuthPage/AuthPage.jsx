@@ -3,7 +3,7 @@ import { RegisterForm } from "../../components/Form/RegisterForm";
 
 export const AuthPage = () => {
   return (
-    <Box display="block">
+    <Box width="100%" height="500px" display="block" padding="40px">
       <RegisterForm />
     </Box>
   );

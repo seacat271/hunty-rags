@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import { Input } from "./RegisterForm.styled";
 
 export const RegisterForm = () => {
   const initialValues = {
@@ -18,8 +19,10 @@ export const RegisterForm = () => {
   });
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="firstName">First Name</label>
-      <input
+      <label htmlFor="firstName" md="10px" display="block">
+        First Name
+      </label>
+      <Input
         id="firstName"
         name="firstName"
         placeholder="Name"
@@ -28,7 +31,7 @@ export const RegisterForm = () => {
       />
 
       <label htmlFor="lastName">Last Name</label>
-      <input
+      <Input
         id="lastName"
         name="lastName"
         placeholder="Last name"
@@ -37,7 +40,7 @@ export const RegisterForm = () => {
       />
 
       <label htmlFor="email">Email</label>
-      <input
+      <Input
         id="email"
         name="email"
         placeholder="email@mail.com"
@@ -46,7 +49,7 @@ export const RegisterForm = () => {
         onChange={formik.handleChange}
       />
       <label htmlFor="phone">Phone</label>
-      <input
+      <Input
         id="phone"
         name="phone"
         placeholder="+38(XXX) XXX-XX-XX"
