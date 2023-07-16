@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hunty-rags/static/css/main.64a41e2c.css",
-    "main.js": "/hunty-rags/static/js/main.30ec3485.js",
+    "main.js": "/hunty-rags/static/js/main.175fad52.js",
     "static/media/new_collection_3.jpg": "/hunty-rags/static/media/new_collection_3.1e320a73837408713329.jpg",
     "static/media/new_collection_2.jpg": "/hunty-rags/static/media/new_collection_2.f02fca700efe5923897d.jpg",
     "static/media/Logo.jpeg": "/hunty-rags/static/media/Logo.ffae8ffc336c65a57375.jpeg",
     "index.html": "/hunty-rags/index.html",
     "main.64a41e2c.css.map": "/hunty-rags/static/css/main.64a41e2c.css.map",
-    "main.30ec3485.js.map": "/hunty-rags/static/js/main.30ec3485.js.map"
+    "main.175fad52.js.map": "/hunty-rags/static/js/main.175fad52.js.map"
   },
   "entrypoints": [
     "static/css/main.64a41e2c.css",
-    "static/js/main.30ec3485.js"
+    "static/js/main.175fad52.js"
   ]
 }
