@@ -8,7 +8,7 @@ export const Card = ({ item }) => {
   const toggleModal = () => {
     setShowModal((state) => !state);
   };
-  const { image, title, price } = item;
+  const { image, title, price, id } = item;
   return (
     <Box padding="10px">
       <Image src={image} alt={title} width="320" height="240" />
@@ -27,6 +27,7 @@ export const Card = ({ item }) => {
       </Box>
       {showModal && (
         <Modal>
+          <h1>id: {id}</h1>
           <button onClick={toggleModal}>Close modal</button>
         </Modal>
       )}
