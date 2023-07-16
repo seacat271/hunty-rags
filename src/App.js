@@ -2,6 +2,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { Header } from "./components/Header/Header";
 import { Box } from "./components/Box/Box";
 import { Footer } from "./components/Footer/Footer";
+import { AuthPage } from "./pages/AuthPage/AuthPage";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <HomePage />
       <Footer />
+      <AuthPage />
     </Box>
   );
 }
