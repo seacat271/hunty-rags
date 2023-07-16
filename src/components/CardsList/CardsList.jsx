@@ -1,8 +1,9 @@
 import { GoodsList } from "../../utility/goodsList";
+import { Box } from "../Box/Box";
 import { Card } from "../Card/Card";
 export const CardsList = () => {
   return (
-    <ul>
+    <Box as="ul" display="flex">
       {GoodsList.map((good) => {
         return (
           <li key={good.id}>
@@ -10,6 +11,6 @@ export const CardsList = () => {
           </li>
         );
       })}
-    </ul>
+    </Box>
   );
 };
