@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { Box } from "./components/Box/Box";
 import { Footer } from "./components/Footer/Footer";
 import { AuthPage } from "./pages/AuthPage/AuthPage";
+import { CardsList } from "./components/CardsList/CardsList";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HomePage />
       <Footer />
       <AuthPage />
+      <CardsList />
     </Box>
   );
 }

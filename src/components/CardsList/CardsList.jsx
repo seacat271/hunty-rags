@@ -3,7 +3,13 @@ import { Card } from "../Card/Card";
 export const CardsList = () => {
   return (
     <ul>
-      <li></li>
+      {GoodsList.map((good) => {
+        return (
+          <li key={good.id}>
+            <Card item={good} />
+          </li>
+        );
+      })}
     </ul>
   );
 };
