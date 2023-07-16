@@ -25,7 +25,11 @@ export const Card = ({ item }) => {
         <button type="button">To favorites</button>
         <button type="button">Compare</button>
       </Box>
-      {showModal && <Modal></Modal>}
+      {showModal && (
+        <Modal>
+          <button onClick={toggleModal}>Close modal</button>
+        </Modal>
+      )}
     </Box>
   );
 };
