@@ -1,7 +1,13 @@
+import { useState } from "react";
 import { Box } from "../Box/Box";
 import { Image } from "./Card.styled";
+import { Modal } from "../Modal/Modal";
 
 export const Card = ({ item }) => {
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => {
+    setShowModal((state) => !state);
+  };
   const { image, title, price } = item;
   return (
     <Box padding="10px">
@@ -12,13 +18,14 @@ export const Card = ({ item }) => {
       <Box as="p" textAlign="center">
         PRICE: {price}
       </Box>
-      <Box as="button" type="button" mb="10px">
+      <Box as="button" type="button" mb="10px" onClick={toggleModal}>
         Add to cart
       </Box>
       <Box>
         <button type="button">To favorites</button>
         <button type="button">Compare</button>
       </Box>
+      {showModal && <Modal></Modal>}
     </Box>
   );
 };
