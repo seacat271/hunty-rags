@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import { Input } from "./RegisterForm.styled";
+import { validationSchema } from "../../utility/AuthSchema";
 
 export const RegisterForm = () => {
   const initialValues = {
@@ -11,24 +12,28 @@ export const RegisterForm = () => {
 
   function handleSubmit(values) {
     console.log(values);
+    formik.resetForm();
   }
 
   const formik = useFormik({
     initialValues,
     onSubmit: handleSubmit,
+    validationSchema,
   });
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="firstName" md="10px" display="block">
-        First Name
-      </label>
+      <label htmlFor="firstName">First Name</label>
       <Input
         id="firstName"
         name="firstName"
         placeholder="Name"
-        value={formik.values.name}
+        value={formik.values.firstName}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
       />
+      {formik.touched.firstName && formik.errors.firstName ? (
+        <div>{formik.errors.firstName}</div>
+      ) : null}
 
       <label htmlFor="lastName">Last Name</label>
       <Input
@@ -37,7 +42,11 @@ export const RegisterForm = () => {
         placeholder="Last name"
         value={formik.values.lastName}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
       />
+      {formik.touched.lastName && formik.errors.lastName ? (
+        <div>{formik.errors.lastName}</div>
+      ) : null}
 
       <label htmlFor="email">Email</label>
       <Input
@@ -47,7 +56,11 @@ export const RegisterForm = () => {
         type="email"
         value={formik.values.email}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
       />
+      {formik.touched.email && formik.errors.email ? (
+        <div>{formik.errors.email}</div>
+      ) : null}
       <label htmlFor="phone">Phone</label>
       <Input
         id="phone"
@@ -56,7 +69,11 @@ export const RegisterForm = () => {
         type="tel"
         value={formik.values.phone}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
       />
+      {formik.touched.phone && formik.errors.phone ? (
+        <div>{formik.errors.phone}</div>
+      ) : null}
       <button type="submit">Submit</button>
     </form>
   );
